@@ -1,0 +1,40 @@
+/* Universals */
+body {
+  margin: 0;
+}
+
+/* The one which changes. */
+.color {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -100;
+}
+.text {
+  opacity: 0.6;
+  font-size: 4rem;
+}
+.otherText {
+  position: absolute;
+  bottom: 0vh;
+  right: 0vw;
+  opacity: 0.2;
+  font-size: 2.7vh;
+  text-align: right;
+}
+
+/* The way to click/tap on the screen. */
+.screen {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+.left,
+.right {
+  z-index: 100;
+  height: 100vh;
+  width: 50vw;
+}
